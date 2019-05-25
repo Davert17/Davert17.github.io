@@ -17,7 +17,7 @@ function ajaxGetSpoiler1(){
       document.getElementById("getspoiler1").innerHTML=xhttp.responseText;
       
     }
-    xhttp.open("POST","/spoiler1.txt",true);
+    xhttp.open("POST","spoiler1.txt",true);
     xhttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
     xhttp.send();
 }
