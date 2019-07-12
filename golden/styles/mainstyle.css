@@ -1,0 +1,443 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+}
+
+header{
+    background: url(../Golden-One\ Page\ Web\ Template-assets/first-bg.jpg) no-repeat center top / cover;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    
+}
+
+.navigbar{
+    margin-top: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between
+    
+}
+.conteiner{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1px 0;
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+nav a{
+    margin-right: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+nav a:hover {
+    border-bottom: 2px solid yellow;
+    
+}
+.titles{
+    margin-top: 30vh;
+}
+
+.titles span{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 75px;
+    color: white;
+    margin-top: 25px;
+}
+.button{
+    margin: 5vh auto 0 auto;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #fed136;
+    padding: 20px 45px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #484543;
+}
+
+.button:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.sectiontitle{
+    margin-top: 115px;
+}
+.sectiontitle h2{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+.sectiontitle span{
+    color: #777;
+}
+
+.services{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 80px auto 120px auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.services div{
+    display: block;
+    width: 290px;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    
+}
+
+.images{
+    margin: 80px auto 140px auto;
+}
+.images img{
+    width: 290px;
+
+}
+.images img:nth-child(2){
+    margin: 0 30px;
+    
+}
+.portfbaccollor{
+    background-color: #f7f7f7;
+}
+
+.aboutconteiner{
+    display: -ms-grid;
+    display: grid;
+    margin: 120px 0 80px 0;
+    
+    grid-template-columns: repeat(12,auto);
+    
+    grid-template-rows: repeat(8,auto);
+    width: 100%;
+        grid-template-areas:"july july july july julyimg julyimg julyimg julyimg . . . ."
+                            "july july july july julyimg julyimg julyimg julyimg . . . ."
+                            ". . . . januimg januimg januimg januimg janu janu janu janu"
+                            ". . . . januimg januimg januimg januimg janu janu janu janu"
+                            "decem decem decem decem decemimg decemimg decemimg decemimg . . . ."
+                            "decem decem decem decem decemimg decemimg decemimg decemimg . . . ."
+                            ". . . . febrimg febrimg febrimg febrimg febr febr febr febr"
+                        ". . . . febrimg febrimg febrimg febrimg febr febr febr febr";
+
+
+}
+.aboutconteiner span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.july{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    text-align: right;
+    grid-area: july;
+    width: 350px;
+}
+.julyimg{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: julyimg;
+    margin: 0 20px;
+}
+.january{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    text-align: left;
+    grid-area: janu;
+    width: 350px;
+}
+
+.januaryimg{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: januimg;
+    margin: 0 20px;
+}
+
+.december{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    text-align: right;
+    grid-area: decem;
+    width: 350px;
+}
+.decemberimg{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: decemimg;
+    margin: 0 20px;
+}
+.february{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    text-align: left;
+    grid-area: febr;
+    width: 350px;
+}
+.februaryimg{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: febrimg;
+    margin: 0 20px;
+}
+@media screen and (max-width:940px){
+    .conteiner{
+        width: 100%;
+    }
+    .images img:nth-child(2){
+        margin: 0 ;
+        
+    }
+    .titles span{
+        font-size: 3vh;
+    }
+    h1{
+        font-size: 6vh;
+    }
+    .navigbar img{
+        margin-left: 15px;
+    }
+    .aboutconteiner{
+        grid-template-areas:   "july july july july july july julyimg julyimg julyimg julyimg . ."
+                            "july july july july july july julyimg julyimg julyimg julyimg . ."
+                           ". . januimg januimg januimg januimg janu janu janu janu janu janu"
+                           ". . januimg januimg januimg januimg janu janu janu janu janu janu"
+                           "decem decem decem decem decem decem decemimg decemimg decemimg decemimg . ."
+                           "decem decem decem decem decem decem decemimg decemimg decemimg decemimg . ."
+                           ". . febrimg febrimg febrimg febrimg febr febr febr febr febr febr"
+                           ". . febrimg febrimg febrimg febrimg febr febr febr febr febr febr";
+    }
+    .july{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    text-align: right;
+    grid-area: july;
+    width: 350px;
+    }
+    .julyimg{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
+    grid-area: julyimg;
+    margin: 0 20px;
+    }
+    .january{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    text-align: left;
+    grid-area: janu;
+    width: 350px;
+    }
+
+    .januaryimg{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: januimg;
+    margin: 0 20px;
+    }
+
+    .december{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    text-align: right;
+    grid-area: decem;
+    width: 350px;
+    }
+    .decemberimg{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
+    grid-area: decemimg;
+    margin: 0 20px;
+    }
+    .february{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-area: febr;
+    width: 350px;
+    }
+    .februaryimg{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: febrimg;
+    margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:715px){
+    .aboutconteiner{
+        grid-template-areas:   ". . . . july july july july . . . ."
+                            ". . . . . julyimg julyimg . . . . ."
+                           ". . . . janu janu janu janu . . . ."
+                           ". . . . . januimg januimg . . . . ."
+                           ". . . . decem decem decem decem . . . ."
+                           ". . . . . decemimg decemimg . . . . ."
+                           ". . . . febr febr febr febr . . . ."
+                           ". . . . . febrimg febrimg . . . . .";
+    text-align: center;
+    }
+    .july{
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 5;
+        -ms-grid-column-span: 4;
+        text-align: center;
+        grid-area: july;
+        width: 100%;
+    }
+    .julyimg{
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 6;
+        -ms-grid-column-span: 2;
+        grid-area: julyimg;
+        margin: 0;
+    }
+    .january{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: janu;
+        text-align: center;
+        width: 100%;
+    }
+    .januaryimg{
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: januimg;
+        margin: 0;
+    }
+    .december{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: decem;
+        text-align: center;
+        width: 100%;
+    }
+    .decemberimg{
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: decemimg;
+        margin: 0%;
+        
+    }
+    .february{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: febr;
+        text-align: center;
+        width: 100%;;
+    }
+    .februaryimg{
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-area: febrimg;
+        margin: 0%;
+    }
+}
+@media screen and (max-width:540px){
+    .navigbar{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .navigbar img{
+        margin: 0 auto;
+    }
+    nav a{
+        
+    }
+}
+footer{
+   
+    height: 140px;
+
+}
+
+footer p{
+    text-align: center;
+    color: #555555;
+    padding: 20px;
+    display: block;
+}
