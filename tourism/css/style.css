@@ -1,0 +1,138 @@
+span.nbts-logo{
+    color: #1298DD;
+    font-size: 36px;
+
+}
+
+#nbts-brandlogo{
+    color:  #8D8D8D;
+    font-size: 30px;
+}
+
+.nav a.nav-link{
+    color: #676767;
+
+}
+
+.nav a.nav-link:hover{
+    border-bottom: 2px solid  #1298DD;
+    
+}
+.bgTur{
+    min-height: 530px;
+    background: url(../images/Layer\ 3.jpg) no-repeat center top / cover;
+}
+
+.bgTur>div{
+    padding-top:150px;
+    text-align: center;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 52px;
+    line-height: 60px;
+}
+
+span.sab_h1{
+    
+    color: white;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.btn-lg{
+    width: 274px;
+    height: 58px;
+    margin: 45px 0;
+    font-size: 34px;
+    padding: 0;
+}
+
+.bgSecond{
+    background-color: #ECECEC;
+    min-height: 569px;
+    padding-top:223px;
+    text-align: center; 
+}
+
+.bgSecond p{
+    margin: 0;
+    color:  #7E7C7C;
+}
+
+.bgSecond p:nth-child(1){
+    font-size: 25px;
+}
+
+.bgSecond p:nth-child(2){
+    font-size: 22px;
+}
+
+.places{
+    width: 490px;
+    height: 245px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: -100px;
+    position: relative;
+    border-bottom: 10px solid #51C03D;
+    padding-top: 24px;
+}
+
+.places h3{
+    color: #868686;
+    font-size: 22px;
+    margin-bottom: 24px
+}
+
+.places div.col{
+    padding: 0;
+}
+
+.places div.col h4{
+    font-size: 14px;
+    color: #929292;
+}
+
+.places div.row{
+    margin-left: 0;
+    margin-right: 0;
+    width: 490px;
+}
+
+.raunded{
+    border-radius: 68px;
+    height: 135px;
+    width: 135px;
+    padding-top: 25px;
+    color: #1298DD;
+    background-color: white;
+}
+
+.raunded:nth-child(1){
+    margin: 0 auto;
+}
+
+.logo_to_do>div{
+    padding: 0;
+    
+}
+
+.logo_to_do{
+    max-width: 770px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.name_to_do{
+    color:  #7E7C7C;
+}
+
+footer{
+    background-color: #414141;
+    text-align: center;
+    color: white;
+}
