@@ -5,8 +5,11 @@ body{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
+    scroll-behavior: smooth;
 }
-
+html{
+    scroll-behavior: smooth; 
+}
 header{
     background: url(../Golden-One\ Page\ Web\ Template-assets/first-bg.jpg) no-repeat center top / cover;
     height: 100vh;
@@ -26,7 +29,7 @@ header{
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between
+            justify-content: space-between;
     
 }
 .conteiner{
@@ -235,6 +238,38 @@ p{
     grid-area: febrimg;
     margin: 0 20px;
 }
+
+
+#menu-toggle{
+    margin-right: 15px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99;
+    border: none;
+    display: none;
+    transition: all 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+
+#menu-toggle:hover{
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+#menu-toggle>img{
+    margin: auto;
+    vertical-align: middle;
+}
+button:focus {outline:0;}
+
+
+
+
+
+
+
+
 @media screen and (max-width:940px){
     .conteiner{
         width: 100%;
@@ -415,18 +450,27 @@ p{
         margin: 0%;
     }
 }
-@media screen and (max-width:540px){
+@media screen and (max-width:550px){
     .navigbar{
-        -webkit-box-orient: vertical;
+        /* -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;
+                flex-direction: column; */
     }
     .navigbar img{
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
-    nav a{
-        
+    nav {
+        display: none;
+    }
+    #menu-toggle{
+        display: block;
+    }
+    #navigbar img {
+        margin-left: 30px;
+    }
+    #menu-toggle{
+        margin-right: 30px;
     }
 }
 footer{
@@ -440,4 +484,40 @@ footer p{
     color: #555555;
     padding: 20px;
     display: block;
+}
+.hidden-menu{
+    position: absolute;
+    top:-100%;
+    transition: all 1s;
+    width: 100%;
+    z-index: 99;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.hidden-menu a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding-left:30px ;
+    /* width: 100%; */
+    border-bottom: 2px solid yellow;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.hidden-menu>#remove-menu{
+height: 50px;
+padding: 20px;
+padding-right: 40px ;
+box-sizing: border-box;
+}
+.hidden-menu>#remove-menu>img{
+    float: right;
+    cursor: pointer;
+}
+.hidden-menu a::first-letter{
+    text-transform: uppercase;
 }
