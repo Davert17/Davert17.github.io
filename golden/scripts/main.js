@@ -3,9 +3,10 @@ window.addEventListener('load',(e)=>{
     document.querySelector('#menu-toggle').addEventListener('click',openMenu);
     document.querySelector('#menu-toggle').addEventListener('touch',openMenu);
     function openMenu(e){
-        setTimeout(()=>{document.body.style.position='fixed'},1000);
+        
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
+        setTimeout(()=>{document.body.style.position='fixed'},1000);
         
     }
     function closeMenu(e){
