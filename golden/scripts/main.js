@@ -5,12 +5,12 @@ window.addEventListener('load',(e)=>{
     function openMenu(e){
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
-        document.body.style.overflow='hidden';
+        document.body.style.position='fixed';
     }
     function closeMenu(e){
         document.querySelector('#menu-toggle').style.opacity='1';
         document.querySelector('.hidden-menu').style.top="-100%";
-        document.body.style.overflow='';
+        document.body.style.position='';
     }
     document.querySelector('.hidden-menu>#remove-menu>img').addEventListener('click',closeMenu);
     document.querySelector('.hidden-menu>#remove-menu>img').addEventListener('touch',closeMenu);
