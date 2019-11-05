@@ -486,7 +486,7 @@ footer p{
     display: block;
 }
 .hidden-menu{
-    position: absolute;
+    position: fixed;
     top:-100%;
     transition: all 1s;
     width: 100%;
