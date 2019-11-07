@@ -15,7 +15,7 @@ window.addEventListener('load',(e)=>{
 
         document.addEventListener(
             'touchmove',
-            stopScroll
+            (e)=>{e.preventDefault();}
             );
             // document.addEventListener(
             //     "scroll",
