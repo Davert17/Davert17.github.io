@@ -4,8 +4,8 @@ window.addEventListener('load',(e)=>{
     document.querySelector('#menu-toggle').addEventListener('touch',openMenu);
     function openMenu(e){
         
-        document.body.style.height='100%';
-        document.body.style.overflow='hidden';
+        document.querySelector('html').style.height='100%';
+        document.querySelector('html').style.overflow='hidden';
 
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
@@ -17,8 +17,8 @@ window.addEventListener('load',(e)=>{
         document.querySelector('#menu-toggle').style.opacity='1';
         document.querySelector('.hidden-menu').style.top="-100%";
         // document.body.style.position='';
-        document.body.style.height='';
-        document.body.style.overflow='';
+        document.querySelector('html').style.height='';
+        document.querySelector('html').style.overflow='';
 
 
 
