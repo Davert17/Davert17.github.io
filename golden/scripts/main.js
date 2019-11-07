@@ -3,10 +3,18 @@ window.addEventListener('load',(e)=>{
     document.querySelector('#menu-toggle').addEventListener('click',openMenu);
     document.querySelector('#menu-toggle').addEventListener('touch',openMenu);
     function openMenu(e){
-        
         document.querySelector('body').style.height='100%';
-        document.querySelector('body').style.position='relavite';
+
         document.querySelector('body').style.overflow='hidden';
+        document.querySelector('body').style.position='relavite';
+
+        document.querySelector('html').style.height='100%';
+
+        document.querySelector('html').style.overflow='hidden';
+        document.querySelector('html').style.position='relavite';
+
+
+
         document.addEventListener("scroll",stopScroll);
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
@@ -22,7 +30,10 @@ window.addEventListener('load',(e)=>{
         document.querySelector('body').style.position='';
         document.querySelector('body').style.overflow='';
 
+        document.querySelector('html').style.height='';
 
+        document.querySelector('html').style.overflow='';
+        document.querySelector('html').style.position='';
 
     }
     function stopScroll(e){
