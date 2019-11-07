@@ -496,16 +496,20 @@ footer p{
 }
 
 .hidden-menu a{
+    text-transform: uppercase;
     color: white;
     display: block;
     text-decoration: none;
     text-align: left;
     padding-left:30px ;
     /* width: 100%; */
-    border-bottom: 2px solid yellow;
+    border-bottom: 1px solid yellow;
     height: 50px;
     font-size: 22px;
     line-height: 50px;
+}
+.hidden-menu a:nth-child(2){
+    border-top: 1px solid yellow;
 }
 
 .hidden-menu>#remove-menu{
@@ -519,5 +523,5 @@ box-sizing: border-box;
     cursor: pointer;
 }
 .hidden-menu a::first-letter{
-    text-transform: uppercase;
+    
 }
