@@ -8,13 +8,13 @@ window.addEventListener('load',(e)=>{
         document.querySelector('body').style.overflow='hidden';
         document.querySelector('body').style.position='relavite';
 
-        document.querySelector('html').style.height='100%';
+        // document.querySelector('html').style.height='100%';
 
         document.querySelector('html').style.overflow='hidden';
         document.querySelector('html').style.position='relavite';
 
         
-        document.addEventListener("scroll",stopScroll);
+        
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
         // setTimeout(()=>{document.body.style.position='fixed'},1000);
