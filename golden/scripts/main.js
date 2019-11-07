@@ -4,16 +4,24 @@ window.addEventListener('load',(e)=>{
     document.querySelector('#menu-toggle').addEventListener('touch',openMenu);
     function openMenu(e){
         
+        document.body.style.height='100%';
+        document.body.style.overflow='hidden';
+
         e.currentTarget.style.opacity='0';
         document.querySelector('.hidden-menu').style.top="0";
-        setTimeout(()=>{document.body.style.position='fixed'},1000);
-        
+        // setTimeout(()=>{document.body.style.position='fixed'},1000);
+
     }
     function closeMenu(e){
-        document.body.style.position='';
+        
         document.querySelector('#menu-toggle').style.opacity='1';
         document.querySelector('.hidden-menu').style.top="-100%";
-        
+        // document.body.style.position='';
+        document.body.style.height='';
+        document.body.style.overflow='';
+
+
+
     }
     document.querySelector('.hidden-menu>#remove-menu>img').addEventListener('click',closeMenu);
     document.querySelector('.hidden-menu>#remove-menu>img').addEventListener('touch',closeMenu);
