@@ -525,3 +525,6 @@ box-sizing: border-box;
 .hidden-menu a::first-letter{
     
 }
+#about_nav p{
+    padding:0 20px;
+}
