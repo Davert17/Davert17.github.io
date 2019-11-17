@@ -46,4 +46,6 @@ window.addEventListener('load',(e)=>{
         a.addEventListener('touch',closeMenu);
         a.addEventListener('click',closeMenu);
     }
+
+    document.querySelector("#description-btn").addEventListener('click',()=> alert("Сайт создан как пример работы верстальщика Павла Демьяненка. Для создания использован только чистый html/css/javascript. "));
 })
