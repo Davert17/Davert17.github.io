@@ -35,4 +35,11 @@ $(document).ready(function(){
         document.querySelector('html').classList.toggle('noscroll');
         document.querySelector('.message').classList.toggle('message-anime');
       });
+        $(document).bind(
+        'touchmove',
+        function(e) {
+          if(body.hasClass('noscroll'))
+        e.preventDefault();
+        }
+        );
   });
