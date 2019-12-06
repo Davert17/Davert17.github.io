@@ -38,7 +38,7 @@ $(document).ready(function(){
         $(document).bind(
         'touchmove',
         function(e) {
-          if(body.hasClass('noscroll'))
+          if($('body').hasClass('noscroll'))
         e.preventDefault();
         }
         );
