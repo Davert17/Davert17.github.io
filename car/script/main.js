@@ -32,6 +32,7 @@ $(document).ready(function(){
         e.preventDefault();
         overlay.classList.toggle('display');
         body.classList.toggle('noscroll');
+        document.querySelector('html').classList.toggle('noscroll');
         document.querySelector('.message').classList.toggle('message-anime');
       });
   });
