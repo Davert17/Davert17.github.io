@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  
 
   if(document.documentElement.clientWidth<1250){
     $('.slider').slick({
@@ -35,11 +34,5 @@ $(document).ready(function(){
         document.querySelector('html').classList.toggle('noscroll');
         document.querySelector('.message').classList.toggle('message-anime');
       });
-        $(document).bind(
-        'touchmove',
-        function(e) {
-          if($('body').hasClass('noscroll'))
-        e.preventDefault();
-        }
-        );
+
   });
