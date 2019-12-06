@@ -653,7 +653,8 @@ footer p{
     display: block;
 }
 
-.noscroll { overflow: hidden; }
+.noscroll { overflow: hidden;
+height: 100%; }
 @keyframes anim {
     0% {transform: scale(0);}
     100% {transform: scale(1);}
