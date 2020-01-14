@@ -172,47 +172,29 @@ $(document).ready(function(){
     teamOffset= $('#team-id').offset().top,
     clientsOffset= $('#clients-id').offset().top;
 
+    
 
-    let scrollHeight=$(document).scrollTop()+$( window ).height();
-    if((scrollHeight+30)>aboutOffset){
-      $('#about-id .container').removeClass('not-in-view');
-      
-    }
-     if((scrollHeight+30)>workOffset){
-      $('#work-id .container').removeClass('not-in-view');
-    }
-     if((scrollHeight+30)>processOffset){
-      $('#process-id .animate-hidden').removeClass('not-in-view');
-    }
-     if((scrollHeight+30)>teamOffset){
-      $('#team-id .container').removeClass('not-in-view');
-    }
-    if((scrollHeight+30)>clientsOffset){
-      $('#clients-id .animate-hidden').removeClass('not-in-view');
-    }
-
-    $(document).on('scroll',function (e) {
-       scrollHeight=$(document).scrollTop()+$( window ).height();
+    $(document).on('scroll load',function (e) {
+      let scrollHeight=$(document).scrollTop()+$( window ).height();
 
 
-      if((scrollHeight+30)>aboutOffset){
-        $('#about-id .container').removeClass('not-in-view');
-        
+      if((scrollHeight+10)>clientsOffset){
+        $('#clients-id .animate-hidden').removeClass('not-in-view');
+   
       }
-       if((scrollHeight+30)>workOffset){
-        $('#work-id .container').removeClass('not-in-view');
-      }
-       if((scrollHeight+30)>processOffset){
-        $('#process-id .animate-hidden').removeClass('not-in-view');
-      }
-       if((scrollHeight+30)>teamOffset){
+      if((scrollHeight+10)>teamOffset){
         $('#team-id .container').removeClass('not-in-view');
       }
-      if((scrollHeight+30)>clientsOffset){
-        $('#clients-id .animate-hidden').removeClass('not-in-view');
+       if((scrollHeight+10)>processOffset){
+        $('#process-id .animate-hidden').removeClass('not-in-view');
       }
-
-
+       if((scrollHeight+10)>workOffset){
+        $('#work-id .container').removeClass('not-in-view');
+      }
+       if((scrollHeight+10)>aboutOffset){
+        $('#about-id .container').removeClass('not-in-view');
+      
+      }
 
 
     })
