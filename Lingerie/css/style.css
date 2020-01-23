@@ -1,0 +1,385 @@
+@font-face{
+    font-family:'TT Travels';
+    src: url(../fonts/TT_Travel/TTTravels-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'Schnyder Cond XL Demi';
+    src: url(../fonts/Schnyder_X_Condensed/Schnyder_X_Cond_XL_Demi.otf) format("opentype");
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    cursor: url("../img/cursor.svg") , auto;
+    
+}
+header{
+    padding-top: 40px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+}
+.top-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 48px 0;
+}
+
+.logo{
+    font-family: 'Molengo', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+nav ul{
+    list-style: none;
+    font-family: 'TT Travels',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.vector{
+    width: 41vw;
+    position: absolute;
+    top: 7px;
+    overflow: hidden;
+    height: 85vh;
+    z-index: -1;
+    margin: 0 auto;
+    left: 30vw;
+}
+
+.vector svg{
+    width: 100% !important;
+
+    height: auto !important;
+
+}
+
+nav ul li{
+    margin-bottom: 10px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.img-slide-container{
+ 
+    transition: opacity 350ms ease-in-out;
+    position: absolute;
+
+}
+.img-slide-container img{
+    width: 100%;
+    height: auto;
+
+
+}
+
+
+.img-slide1{
+    /* top: 130px; */
+    top: calc(50vh  - 8vw * 1.25 - 75px );
+    left: 18vw;
+    width: 16vw;
+    height: calc(16vw * 1.39);
+   overflow: hidden;
+    transform: rotate(1.1deg);
+    z-index: 2;
+}
+.img-slide1 img {
+    width: 200%;
+    margin-top: -10%;
+    margin-left: -50%;
+}
+.img-slide2{
+    /* top: 73px; */
+    top: calc(50vh  - 16.5vw * 1.25 );
+    left: 35vw;
+    width: 28vw;
+    height: calc(28vw * 1.45);
+    overflow: hidden;
+    
+    transform: rotate(1.5deg);
+    z-index: 3;
+}
+.img-slide2 img{
+    width: 120%;
+    margin-left: -10%;
+}
+.img-slide3{
+    overflow: hidden;
+
+    top: calc(50vh  - 8vw  + 15vh );
+    left: 59vw;
+    width: 24vw;
+    height: 16vw;
+    transform: rotate(2.03deg);
+    z-index: 4;
+}
+.img-slide3 img{
+    margin-top: -28%;
+
+}
+
+
+.swiper-slider-h1{
+    top: calc(50vh - 50px) ;
+    position: absolute;
+    overflow: hidden;
+    z-index: 9;
+   width: 100%;
+    height: 110px;
+    font-family: 'Schnyder Cond XL Demi',serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 125px;
+    line-height: 86%;
+    color: #580300;
+    mix-blend-mode: darken;
+    box-sizing: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #580300;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 500ms;
+}
+.swiper-slide{
+    width: 58.5vw !important;
+}
+.swiper-slide h2{
+    display: inline;
+    margin: 0;
+    font-size: inherit;
+}
+.filled-text-h1{
+    
+    -webkit-text-fill-color:#580300;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #580300;
+    color: #580300;
+}
+
+
+
+.swiper-slide-prev{
+    transform: rotate(-1.5deg);
+}
+
+.swiper-slide-next{
+    transform: rotate(1.5deg);
+}
+.change-anime1{
+    opacity: 0;
+}
+.change-anime{
+    
+    opacity: 0;
+  
+}
+.tooltip-h1{
+    opacity: 0;
+    position: absolute;
+   z-index: -2;
+    
+    
+    font-family: 'TT Travels',sans-serif;
+    text-align: center;
+    font-size: 8px;
+    line-height: 10px;
+    height: 12px;
+    width: 42px;
+    color: #000000;    
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition:opacity 900ms ease-in-out;
+}
+
+.tooltip-h1.visivle{
+    z-index: 99;
+    opacity: 1;
+    
+}
+
+.btn-nav{
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    width: 20px;
+    height: 9px;
+    background: url(../img/button.svg) ;
+    display: none;
+}
+
+.modal-popup-nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1999;
+    bottom: -100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'TT Travels',sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    list-style: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.modal-popup-nav .btn-nav{
+    float: right;
+    margin-right: 60px;
+    background: url(../img/close.svg) center center;
+    background-size: cover;
+}
+
+.modal-show{
+    opacity: 1;
+    bottom: 0;
+}
+
+.modal-popup-nav ul{
+    list-style: none;
+    padding: 0;
+}
+.modal-popup-nav ul li{
+    margin-bottom: 10px;
+}
+.modal-popup-nav a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.contact{
+    font-family: 'TT Travels',sans-serif;
+font-size: 11px;
+line-height: 13px;
+position: absolute;
+bottom: 50px;
+left: 25px;
+}
+
+.contact hr{
+    width: 50px;
+    height: 1px;
+    margin: 0;
+    display: inline-block;
+    background: #393939;
+    opacity: 0.25;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .change-anime1{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .vector{
+        width: calc(85vh * 0.84);
+        top: 7vh;
+        left: calc(50vw - 42.5vh * 0.84);
+    }
+    .img-slide1{
+        left: 16vw;
+        width: 16vw;
+    }
+    .img-slide2{
+        top: calc(50vh  - 19vw * 1.45 );
+        width: 38vw;
+        height: calc(38vw * 1.45);
+    }
+    .img-slide3{
+        width: 24vw;
+        left: 63vw;
+    }
+}       
+
+@media screen and (max-width:940px){
+    .img-slide2{
+        top: calc(50vh  - 24vw * 1.45 );
+        width: 48vw;
+        height: calc(48vw * 1.45);
+        left: 26vw;
+    }
+    .vector{
+        width: 90vw;
+        left: 5vw;
+    }
+    .img-slide1{
+        left: 5vw;
+        width: 20vw;
+        height: calc(20vw * 1.39);
+    }
+    .img-slide3{
+        width: 27vw;
+        left: 63vw;
+        height: 18vw;
+    }
+    .swiper-slider-h1{
+        font-size: 110px;
+    }
+    .swiper-slide {
+        width: 66.5vw !important;
+    }
+}
+
+@media screen and (max-width:615px){
+    .swiper-slider-h1{
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:545px){
+    .swiper-slider-h1{
+        font-size: 80px;
+    }
+    .img-slide3{
+        display: none;
+    }
+    .img-slide1{
+        display: none;
+    }
+    .img-slide2{
+        top: calc(50vh  - 30vw * 1.45 );
+        width: 60vw;
+        height: calc(60vw * 1.45);
+        left: 20vw;
+    }
+}
+@media screen and (max-width:450px){
+    .swiper-slider-h1{
+        font-size: 48px;
+        top: calc(50vh - 20px);
+        height: 54px;
+    }
+    nav ul{
+        display: none;
+    }
+    .btn-nav{
+        display: block;
+    }
+
+}
