@@ -46,6 +46,12 @@ zip.generateAsync({type:"blob"})
 $('#get').on('click', function () {
     
     try{
+
+        if(!$('#link').val()){
+            alert('Put link to font css')
+            return false
+        }
+
         $.get($('#link').val(), null,
         function (data, textStatus, jqXHR) {
             // console.log(textStatus)
