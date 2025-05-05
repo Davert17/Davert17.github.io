@@ -1,0 +1,190 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    10. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+body{
+    padding:  0 20px;
+}
+
+
+body {
+    font-family: "Comfortaa", sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header{
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    gap: 48px;
+    justify-content: flex-end;
+}
+
+.nav a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover{
+    text-decoration: underline;
+}
+
+body{
+    background-image: url('./images/yellow-bg.svg');
+    background-repeat: no-repeat;
+    background-position: calc(50vw + 0px) -257px;
+    min-height: 100vh;
+    background-color: #F9FAFF;
+}
+
+.main-side{
+    max-width: 50%;
+    padding-top: 100px;
+
+}
+
+.PDfont{
+    font-family: "Playfair Display", serif;
+}
+
+.title{
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.subtitle{
+    font-size: 20px;
+    color:#828282
+}
+
+.idea{
+    margin-top: 260px;
+    text-align: center;
+}
+
+.page-title{
+    font-size: 32px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.page-title::after{
+    content: "";
+    display: block;
+    background-color:#FDC435;
+    height: 2px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.video{
+    padding-top: 260px;
+}
+
+.video-title{
+    margin-bottom: 100px;
+}
+
+.video-wrapper{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 56%;
+    width: 900px;
+    max-width: 100%;
+    background: black;
+    border-radius: 10px;
+    color:#fff;
+    position: relative;
+}
+
+.video-label{
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.scenario{
+    padding-top: 260px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+@media (max-width:800px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .main-side{
+        max-width: 100%;
+    }
+}
